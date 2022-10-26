@@ -47,6 +47,15 @@ chrome.contextMenus.create({
     id: 'all_tabs', title: "all tabs页面",
 });
 
+
+chrome.contextMenus.create({
+    id: 'seo_title', title: "Seo编辑页面",
+});
+
+chrome.contextMenus.create({
+    id: 'wp_seo_tools', title: "Seo Tools页面",
+});
+
 chrome.contextMenus.create({
     id: 'clear_cache', title: "清除缓存",
 });
@@ -69,6 +78,8 @@ function contextClick(info, tab) {
         postman_config: "/wp-admin/options-general.php?page=postman%2Fconfiguration",
         contact: "/wp-admin/admin.php?page=wpcf7",
         all_tabs: "/wp-admin/edit.php?post_type=ywtm_tab",
+        seo_title: "/wp-admin/admin.php?page=wpseo_titles",
+        wp_seo_tools: "/wp-admin/admin.php?page=wpseo_tools",
     }
     const uri = menus[menuItemId]
     getCurrentTab().then(res => {
