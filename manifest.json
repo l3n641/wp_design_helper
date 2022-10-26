@@ -26,6 +26,9 @@
       "*://*.com/*"
     ]
   },
+  "background": {
+    "service_worker": "js/service-worker.js"
+  },
   "permissions": [
     "tabs",
     "notifications",
