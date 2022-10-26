@@ -71,7 +71,7 @@ function contextClick(info, tab) {
         create_menu: "/wp-admin/themes.php?page=woo-create-menu",
         menu: "/wp-admin/nav-menus.php",
         widgets: "/wp-admin/widgets.php",
-        customize: "wp-admin/customize.php",
+        customize: "/wp-admin/customize.php",
         clear_cache: "/wp-admin/themes.php?page=woo-tools",
         permalink: "/wp-admin/options-permalink.php",
         woo_settings: "/wp-admin/admin.php?page=wc-settings",
