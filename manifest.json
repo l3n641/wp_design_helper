@@ -1,0 +1,38 @@
+{
+  "name": "front helper",
+  "description": "前端工作小助手",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "icons": {
+    "128": "img/icon.png"
+  },
+  "action": {
+    "default_popup": "html/popup.html",
+    "default_icon": "img/icon.png",
+    "default_title": "小助手"
+  },
+  "content_scripts": [
+    {
+      "js": [
+        "js/content.js"
+      ],
+      "matches": [
+        "*://*.com/*"
+      ]
+    }
+  ],
+  "externally_connectable": {
+    "matches": [
+      "*://*.com/*"
+    ]
+  },
+  "permissions": [
+    "tabs",
+    "notifications",
+    "storage",
+    "contextMenus"
+  ],
+  "host_permissions": [
+    "*://*.com/*"
+  ]
+}
