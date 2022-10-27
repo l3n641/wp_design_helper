@@ -20,6 +20,10 @@ chrome.contextMenus.create({
 });
 
 chrome.contextMenus.create({
+    id: 'menu', title: "menu页面",
+});
+
+chrome.contextMenus.create({
     id: 'widgets', title: "widgets页面",
 });
 
@@ -57,6 +61,14 @@ chrome.contextMenus.create({
 });
 
 chrome.contextMenus.create({
+    id: 'product_tag', title: "product tag页面",
+});
+
+chrome.contextMenus.create({
+    id: 'product_category', title: "product category页面",
+});
+
+chrome.contextMenus.create({
     id: 'clear_cache', title: "清除缓存",
 });
 
@@ -80,6 +92,8 @@ function contextClick(info, tab) {
         all_tabs: "/wp-admin/edit.php?post_type=ywtm_tab",
         seo_title: "/wp-admin/admin.php?page=wpseo_titles",
         wp_seo_tools: "/wp-admin/admin.php?page=wpseo_tools",
+        product_category: "/wp-admin//edit-tags.php?taxonomy=product_cat&post_type=product",
+        product_tag: "/wp-admin/edit-tags.php?taxonomy=product_tag&post_type=product",
     }
     const uri = menus[menuItemId]
     getCurrentTab().then(res => {
