@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>seo</title>
+    <link rel="stylesheet" href="/css/seo.css">
+    <script type="module" src="/js/seo_list.js"></script>
+    <script type="module" src="/js/seo.js"></script>
+</head>
+<body>
+<main>
+    <form method="post" id="seo_form">
+        <label for="lang">语言:</label>
+        <select name="lang" id="lang">
+            <option value="">任意</option>
+            <option value="en">en</option>
+            <option value="de">de</option>
+            <option value="dk">dk</option>
+            <option value="es">es</option>
+            <option value="fr">fr</option>
+            <option value="it">it</option>
+            <option value="nl">nl</option>
+            <option value="no">no</option>
+            <option value="pl">pl</option>
+            <option value="se">se</option>
+        </select>
+
+        <label for="keyword">关键词</label>
+        <input type="text" id="keyword" name="keyword" required placeholder="以空格分隔">
+
+        <fieldset>
+            <legend>搜索范围：(多选)</legend>
+            <input type="checkbox" name="column" value="title" checked/>title
+            <input type="checkbox" name="column" value="description"/>description
+            <input type="checkbox" name="column" value="category"/>category
+            <input type="checkbox" name="column" value="tag"/>tag
+        </fieldset>
+
+        <input type="submit" value="提交">
+    </form>
+    <table class="seo-table" id="seo-table">
+        <thead>
+        <td>语言</td>
+        <td>标题</td>
+        <td>描述</td>
+        <td>分类</td>
+        <td>标签</td>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+</main>
+
+
+</body>
+</html>

@@ -1,0 +1,15 @@
+
+#seo-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    white-space: nowrap;
+}
+
+#seo-table td, #seo-table th {
+    border: 1px solid #ddd;
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px 5px;
+    background-color: unset;
+}
