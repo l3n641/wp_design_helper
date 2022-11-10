@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>shipping 文案</title>
+    <link rel="stylesheet" href="/css/layout.css">
+    <script src="/js/dist/clipboard.min.js"></script>
+    <script type="module" src="/js/shipping.js"></script>
+
+</head>
+<body>
+<div class="container">
+    <main>
+        <div class="country">
+            <h3>法国-fr</h3>
+            <div class="code">
+                <button class="btn_copy" data-clipboard-target="#fr_free" data-clipboard-action="copy">包邮</button>
+                <code>
+                    <xmp id="fr_free">
+                        <ul style="margin:0;list-style: none;padding:0;">
+                            <li><i class="fa fa-plane"></i> Livraison toujours gratuite</li>
+                            <li><i class="fa fa-thumbs-up"></i> Paiement sécurisé par le protocole SSL</li>
+                            <li><i class="fa fa-reply"></i> Retour gratuit sous 20-30 jours</li>
+                            <li><i class="fa fa-credit-card"></i> Paiements:&nbsp;&nbsp; <i
+                                    class="fa fa-cc-mastercard fa-2x"></i> <i class="fa fa-cc-jcb fa-2x"></i> <i
+                                    class="fa fa-cc-visa fa-2x"></i></li>
+                        </ul>
+                    </xmp>
+                </code>
+            </div>
+            <div class="code">
+                <button class="btn_copy" data-clipboard-target="#fr_no_free" data-clipboard-action="copy">不包邮</button>
+                <code>
+                    <xmp id="fr_no_free">
+
+                        <ul style="margin:0;list-style: none;padding:0;">
+                            <li><i class="fa fa-plane"></i> Livraison gratuite sur toutes les commandes de plus de € 60
+                            </li>
+                            <li><i class="fa fa-thumbs-up"></i> Paiement sécurisé par le protocole SSL</li>
+                            <li><i class="fa fa-reply"></i> Retour gratuit sous 20-30 jours</li>
+                            <li><i class="fa fa-credit-card"></i> Paiements:&nbsp;&nbsp; <i
+                                    class="fa fa-cc-mastercard fa-2x"></i> <i class="fa fa-cc-jcb fa-2x"></i> <i
+                                    class="fa fa-cc-visa fa-2x"></i></li>
+                        </ul>
+
+                    </xmp>
+                </code>
+            </div>
+        </div>
+
+        <div class="country">
+            <h3>意大利-it</h3>
+            <div class="code">
+                <button class="btn_copy" data-clipboard-target="#it_free" data-clipboard-action="copy">包邮</button>
+                <code>
+                    <xmp id="it_free">
+
+                        <ol style="margin:0;list-style: none;padding:0;">
+                            <li><i class="fa fa-lock"></i> Acquisti sicuri al 100%</li>
+                            <li><i class="fa fa-plane"></i> Consegna sempre gratuita</li>
+                            <li><i class="fa fa-thumbs-up"></i> La crittografia SSL di secure</li>
+                            <li><i class="fa fa-reply"></i> 20-30 Giorni per resi e cambi</li>
+                            <li><i class="fa fa-credit-card"></i> Pagamenti: <i class="fa fa-cc-mastercard fa-2x"></i>
+                                <i class="fa fa-cc-jcb fa-2x"></i> <i class="fa fa-cc-visa fa-2x"></i></li>
+                        </ol>
+
+                    </xmp>
+                </code>
+            </div>
+
+            <div class="code">
+                <button class="btn_copy" data-clipboard-target="#it_no_free" data-clipboard-action="copy">不包邮</button>
+                <code>
+                    <xmp id="it_no_free">
+
+                        <ol style="margin:0;list-style: none;padding:0;">
+                            <li><i class="fa fa-lock"></i> Acquisti sicuri al 100%</li>
+                            <li><i class="fa fa-plane"></i> Consegna gratuita da € 60</li>
+                            <li><i class="fa fa-thumbs-up"></i> La crittografia SSL di secure</li>
+                            <li><i class="fa fa-reply"></i> 20-30 Giorni per resi e cambi</li>
+                            <li><i class="fa fa-credit-card"></i> Pagamenti: <i class="fa fa-cc-mastercard fa-2x"></i>
+                                <i class="fa fa-cc-jcb fa-2x"></i> <i class="fa fa-cc-visa fa-2x"></i></li>
+                        </ol>
+
+                    </xmp>
+                </code>
+            </div>
+        </div>
+
+        <div class="country">
+            <h3>西班牙-es</h3>
+            <div class="code">
+                <button class="btn_copy" data-clipboard-target="#es_free" data-clipboard-action="copy">包邮</button>
+                <code>
+                    <xmp id="es_free">
+
+                        <ul style="margin:0;list-style: none;padding:0;">
+                            <li><i class="fa fa-lock"></i> Pago 100% seguro</li>
+                            <li><i class="fa fa-plane"></i> Envío gratis y envío de devolución</li>
+                            <li><i class="fa fa-reply"></i> 20-30 Días para devolver</li>
+                            <li><i class="fa fa-credit-card"></i> Formas De Pago:<br> <i
+                                    class="fa fa-cc-mastercard fa-2x"></i> <i class="fa fa-cc-jcb fa-2x"></i> <i
+                                    class="fa fa-cc-visa fa-2x"></i></li>
+                        </ul>
+
+                    </xmp>
+                </code>
+            </div>
+
+            <div class="code">
+                <button class="btn_copy" data-clipboard-target="#es_no_free" data-clipboard-action="copy">不包邮</button>
+                <code>
+                    <xmp id="es_no_free">
+
+                        <ul style="margin:0;list-style: none;padding:0;">
+                            <li><i class="fa fa-lock"></i> Pago 100% seguro</li>
+                            <li><i class="fa fa-plane"></i> Envío gratuito a partir de € 60</li>
+                            <li><i class="fa fa-reply"></i> 20-30 Días para devolver</li>
+                            <li><i class="fa fa-credit-card"></i> Formas De Pago:<br> <i
+                                    class="fa fa-cc-mastercard fa-2x"></i> <i class="fa fa-cc-jcb fa-2x"></i> <i
+                                    class="fa fa-cc-visa fa-2x"></i></li>
+                        </ul>
+
+                    </xmp>
+                </code>
+            </div>
+        </div>
+
+
+        <div class="country">
+            <h3>英语-en</h3>
+            <div class="code">
+                <button class="btn_copy" data-clipboard-target="#en_free" data-clipboard-action="copy">包邮</button>
+                <code>
+                    <xmp id="en_free">
+
+                        <ul style="margin:0;list-style: none;padding:0;">
+                            <li><i class="fa fa-lock"></i> 100% Secure Shopping</li>
+                            <li><i class="fa fa-plane"></i> Free Shipping & Return Shipping</li>
+                            <li><i class="fa fa-thumbs-up"></i> Secure Shopping SSL Encryption</li>
+                            <li><i class="fa fa-reply"></i> 20-30 Days Return Guarantee</li>
+                            <li><i class="fa fa-credit-card"></i> Payment Methods:&nbsp;&nbsp; <i
+                                    class="fa fa-cc-mastercard fa-2x"></i> <i class="fa fa-cc-jcb fa-2x"></i> <i
+                                    class="fa fa-cc-visa fa-2x"></i></li>
+                        </ul>
+
+                    </xmp>
+                </code>
+            </div>
+
+            <div class="code">
+                <button class="btn_copy" data-clipboard-target="#en_no_free" data-clipboard-action="copy">不包邮</button>
+                <code>
+                    <xmp id="en_no_free">
+                        <ul style="margin:0;list-style: none;padding:0;">
+                            <li><i class="fa fa-lock"></i> 100% Secure Shopping</li>
+                            <li><i class="fa fa-plane"></i> Free Shipping Over ￡ 60</li>
+                            <li><i class="fa fa-thumbs-up"></i> Secure Shopping SSL Encryption</li>
+                            <li><i class="fa fa-reply"></i> 20-30 Days Return Guarantee</li>
+                            <li><i class="fa fa-credit-card"></i> Payment Methods:&nbsp;&nbsp; <i
+                                    class="fa fa-cc-mastercard fa-2x"></i> <i class="fa fa-cc-jcb fa-2x"></i> <i
+                                    class="fa fa-cc-visa fa-2x"></i></li>
+                        </ul>
+
+                    </xmp>
+                </code>
+            </div>
+
+            <div class="code">
+                <button class="btn_copy" data-clipboard-target="#en_no_free_2" data-clipboard-action="copy">不包邮</button>
+                <code>
+                    <xmp id="en_no_free_2">
+
+                        <ul style="margin:0;list-style: none;padding:0;">
+                            <li><i class="fa fa-lock"></i> 100% Secure Shopping</li>
+                            <li><i class="fa fa-plane"></i> Free Shipping Over $ 60</li>
+                            <li><i class="fa fa-thumbs-up"></i> Secure Shopping SSL Encryption</li>
+                            <li><i class="fa fa-reply"></i> 20-30 Days Return Guarantee</li>
+                            <li><i class="fa fa-credit-card"></i> Payment Methods:&nbsp;&nbsp; <i
+                                    class="fa fa-cc-mastercard fa-2x"></i> <i class="fa fa-cc-jcb fa-2x"></i> <i
+                                    class="fa fa-cc-visa fa-2x"></i></li>
+                        </ul>
+
+                    </xmp>
+                </code>
+            </div>
+
+        </div>
+
+
+        <div class="country">
+            <h3>荷兰-nl</h3>
+            <div class="code">
+                <button class="btn_copy" data-clipboard-target="#nl_free" data-clipboard-action="copy">包邮</button>
+                <code>
+                    <xmp id="nl_free">
+
+                        <ul style="margin:0;list-style: none;padding:0;">
+                            <li><i class="fa fa-lock"></i> 100% Veilig winkelen</li>
+                            <li><i class="fa fa-plane"></i> Gratis verzending en retourzending</li>
+                            <li><i class="fa fa-thumbs-up"></i> Veilig winkelen SSL-codering</li>
+                            <li><i class="fa fa-reply"></i> 20-30 Dagen bedenktijd</li>
+                            <li><i class="fa fa-credit-card"></i> Betaalmethodes:&nbsp;&nbsp; <i
+                                    class="fa fa-cc-mastercard fa-2x"></i> <i class="fa fa-cc-jcb fa-2x"></i> <i
+                                    class="fa fa-cc-visa fa-2x"></i></li>
+                        </ul>
+
+                    </xmp>
+                </code>
+            </div>
+
+            <div class="code">
+                <button class="btn_copy" data-clipboard-target="#_no_free" data-clipboard-action="copy">不包邮</button>
+                <code>
+                    <xmp id="_no_free">
+                        <ul style="margin: 0; list-style: none; padding: 0;">
+                            <li><i class="fa fa-lock"></i> 100% Veilig winkelen</li>
+                            <li><i class="fa fa-plane"></i> Gratis thuisbezorgd vanaf €60</li>
+                            <li><i class="fa fa-thumbs-up"></i> Veilig winkelen SSL-codering</li>
+                            <li><i class="fa fa-reply"></i> 20-30 Dagen bedenktijd</li>
+                            <li><i class="fa fa-credit-card"></i> Betaalmethodes: <i
+                                    class="fa fa-cc-mastercard fa-2x"></i> <i class="fa fa-cc-jcb fa-2x"></i> <i
+                                    class="fa fa-cc-visa fa-2x"></i></li>
+                        </ul>
+
+                    </xmp>
+                </code>
+            </div>
+        </div>
+
+
+        <div class="country">
+            <h3>波兰-pl</h3>
+            <div class="code">
+                <button class="btn_copy" data-clipboard-target="#pl_free" data-clipboard-action="copy">包邮</button>
+                <code>
+                    <xmp id="pl_free">
+                        <ul style="margin:0;list-style: none;padding:0;">
+                            <li><i class="fa fa-lock"></i> Bezpieczeństwo zakupów</li>
+                            <li><i class="fa fa-plane"></i> Dostawa gratis</li>
+                            <li><i class="fa fa-thumbs-up"></i> Bezpieczne zakupy (SSL)</li>
+                            <li><i class="fa fa-reply"></i> Gwarancja zwrotu 20-30 dni</li>
+                            <li><i class="fa fa-credit-card"></i> Metody Płatności:&nbsp;&nbsp; <i
+                                    class="fa fa-cc-mastercard fa-2x"></i> <i class="fa fa-cc-jcb fa-2x"></i> <i
+                                    class="fa fa-cc-visa fa-2x"></i></li>
+                        </ul>
+
+                    </xmp>
+                </code>
+            </div>
+
+            <div class="code">
+                <button class="btn_copy" data-clipboard-target="#pl_no_free" data-clipboard-action="copy">不包邮</button>
+                <code>
+                    <xmp id="pl_no_free">
+
+                        <ul style="margin:0;list-style: none;padding:0;">
+                            <li><i class="fa fa-lock"></i> Bezpieczeństwo zakupów</li>
+                            <li><i class="fa fa-plane"></i> Darmowa wysyłka powyżej 220 zł</li>
+                            <li><i class="fa fa-thumbs-up"></i> Bezpieczne zakupy (SSL)</li>
+                            <li><i class="fa fa-reply"></i> Gwarancja zwrotu 20-30 dni</li>
+                            <li><i class="fa fa-credit-card"></i> Metody Płatności:&nbsp;&nbsp; <i
+                                    class="fa fa-cc-mastercard fa-2x"></i> <i class="fa fa-cc-jcb fa-2x"></i> <i
+                                    class="fa fa-cc-visa fa-2x"></i></li>
+                        </ul>
+
+                    </xmp>
+                </code>
+            </div>
+        </div>
+
+
+        <div class="country">
+            <h3>德国-de</h3>
+            <div class="code">
+                <button class="btn_copy" data-clipboard-target="#de_free" data-clipboard-action="copy">包邮</button>
+                <code>
+                    <xmp id="de_free">
+                        <ul style="margin:0;list-style: none;padding:0;">
+                            <li><i class="fa fa-lock"></i> 100% Sicher shoppen</li>
+                            <li><i class="fa fa-plane"></i> Kostenloser versand & rückversand</li>
+                            <li><i class="fa fa-thumbs-up"></i> Sichere Zahlung mit SSL-Verschlüsselung</li>
+                            <li><i class="fa fa-reply"></i> 20-30 Tage rückgabegarantie</li>
+                            <li><i class="fa fa-credit-card"></i> Zahlungsmethoden:&nbsp;&nbsp; <i
+                                    class="fa fa-cc-mastercard fa-2x"></i> <i class="fa fa-cc-jcb fa-2x"></i> <i
+                                    class="fa fa-cc-visa fa-2x"></i></li>
+                        </ul>
+
+                    </xmp>
+                </code>
+            </div>
+
+            <div class="code">
+                <button class="btn_copy" data-clipboard-target="#de_no_free" data-clipboard-action="copy">不包邮</button>
+                <code>
+                    <xmp id="de_no_free">
+                        <ul style="margin:0;list-style: none;padding:0;">
+                            <li><i class="fa fa-lock"></i> 100% Sicher shoppen</li>
+                            <li><i class="fa fa-plane"></i> Versandkostenfrei ab € 60</li>
+                            <li><i class="fa fa-thumbs-up"></i> Sichere Zahlung mit SSL-Verschlüsselung</li>
+                            <li><i class="fa fa-reply"></i> 20-30 Tage rückgabegarantie</li>
+                            <li><i class="fa fa-credit-card"></i> Zahlungsmethoden:&nbsp;&nbsp; <i
+                                    class="fa fa-cc-mastercard fa-2x"></i> <i class="fa fa-cc-jcb fa-2x"></i> <i
+                                    class="fa fa-cc-visa fa-2x"></i></li>
+                        </ul>
+
+
+                    </xmp>
+                </code>
+            </div>
+        </div>
+
+
+        <div class="country">
+            <h3>瑞典-se</h3>
+            <div class="code">
+                <button class="btn_copy" data-clipboard-target="#se_free" data-clipboard-action="copy">包邮</button>
+                <code>
+                    <xmp id="se_free">
+
+                        <ul style="margin:0;list-style: none;padding:0;">
+                            <li><i class="fa fa-lock"></i> 100% säker shopping</li>
+                            <li><i class="fa fa-plane"></i> Fri frakt och fri retur</li>
+                            <li><i class="fa fa-thumbs-up"></i> Säker Shopping SSL Kryptering</li>
+                            <li><i class="fa fa-reply"></i> 20-30 Dagars Returgaranti</li>
+                            <li><i class="fa fa-credit-card"></i> Betalningsmetoder: &nbsp;&nbsp; <i
+                                    class="fa fa-cc-mastercard fa-2x"></i> <i class="fa fa-cc-jcb fa-2x"></i> <i
+                                    class="fa fa-cc-visa fa-2x"></i></li>
+                        </ul>
+
+                    </xmp>
+                </code>
+            </div>
+
+            <div class="code">
+                <button class="btn_copy" data-clipboard-target="#se_no_free" data-clipboard-action="copy">不包邮</button>
+                <code>
+                    <xmp id="se_no_free">
+
+                        <ul style="margin:0;list-style: none;padding:0;">
+                            <li><i class="fa fa-lock"></i> 100% säker shopping</li>
+                            <li><i class="fa fa-plane"></i> Fraktfritt vid Beställning över SEK 530</li>
+                            <li><i class="fa fa-thumbs-up"></i> Säker Shopping SSL Kryptering</li>
+                            <li><i class="fa fa-reply"></i> 20-30 Dagars Returgaranti</li>
+                            <li><i class="fa fa-credit-card"></i> Betalningsmetoder: &nbsp;&nbsp; <i
+                                    class="fa fa-cc-mastercard fa-2x"></i> <i class="fa fa-cc-jcb fa-2x"></i> <i
+                                    class="fa fa-cc-visa fa-2x"></i></li>
+                        </ul>
+
+
+                    </xmp>
+                </code>
+            </div>
+        </div>
+
+        <div class="country">
+            <h3>丹麦-dk</h3>
+            <div class="code">
+                <button class="btn_copy" data-clipboard-target="#dk_free" data-clipboard-action="copy">包邮</button>
+                <code>
+                    <xmp id="dk_free">
+
+                        <ul style="margin:0;list-style: none;padding:0;">
+                            <li><i class="fa fa-lock"></i> 100% Sikker Shopping</li>
+                            <li><i class="fa fa-plane"></i>Omkostningsfri Fragt Og Returnering</li>
+                            <li><i class="fa fa-thumbs-up"></i> Betalingsmetoder med SSL-kryptering</li>
+                            <li><i class="fa fa-reply"></i> Gratis retur inden til 20-30 dage</li>
+                            <li><i class="fa fa-credit-card"></i> Betalingsmetoder:&nbsp;&nbsp; <i
+                                    class="fa fa-cc-mastercard fa-2x"></i> <i class="fa fa-cc-jcb fa-2x"></i> <i
+                                    class="fa fa-cc-visa fa-2x"></i></li>
+                        </ul>
+
+                    </xmp>
+                </code>
+            </div>
+
+            <div class="code">
+                <button class="btn_copy" data-clipboard-target="#dk_no_free" data-clipboard-action="copy">不包邮</button>
+                <code>
+                    <xmp id="dk_no_free">
+                        <ul style="margin:0;list-style: none;padding:0;">
+                            <li><i class="fa fa-lock"></i> 100% Sikker Shopping</li>
+                            <li><i class="fa fa-plane"></i>Gratis Ved Køb Over DKK 390</li>
+                            <li><i class="fa fa-thumbs-up"></i> Betalingsmetoder med SSL-kryptering</li>
+                            <li><i class="fa fa-reply"></i> Gratis retur inden til 20-30 dage</li>
+                            <li><i class="fa fa-credit-card"></i> Betalingsmetoder:&nbsp;&nbsp; <i
+                                    class="fa fa-cc-mastercard fa-2x"></i> <i class="fa fa-cc-jcb fa-2x"></i> <i
+                                    class="fa fa-cc-visa fa-2x"></i></li>
+                        </ul>
+
+
+                    </xmp>
+                </code>
+            </div>
+        </div>
+
+        <div class="country">
+            <h3>挪威-no</h3>
+
+            <div class="code">
+                <button class="btn_copy" data-clipboard-target="#no_no_free" data-clipboard-action="copy">不包邮</button>
+                <code>
+                    <xmp id="no_no_free">
+                        <ul style="margin: 0; list-style: none; padding: 0;">
+                            <li><i class="fa fa-lock"></i> 100% sikker shopping</li>
+                            <li><i class="fa fa-plane"></i> Fri frakt over 547 NOK & Fri retur</li>
+                            <li><i class="fa fa-thumbs-up"></i> Sikker shopping SSL-kryptering</li>
+                            <li><i class="fa fa-reply"></i> 20-30 dagers returrett</li>
+                            <li><i class="fa fa-credit-card"></i> Betalingsmåte:&nbsp;&nbsp;<i
+                                    class="fa fa-cc-visa fa-2x"></i> <i class="fa fa-cc-mastercard fa-2x"></i> <i
+                                    class="fa fa-cc-jcb fa-2x"></i> <i class="fa fa-cc-visa fa-2x"></i></li>
+                        </ul>
+
+                    </xmp>
+                </code>
+            </div>
+        </div>
+
+
+    </main>
+    <aside></aside>
+</div>
+
+</body>
+</html>

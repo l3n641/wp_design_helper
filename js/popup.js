@@ -7,9 +7,12 @@ window.onload = function () {
 
         if (target.nodeName === 'LI') {// 判断这个DOM节点名字是不是li，
             const index = target.getAttribute('data-index')
-            switch (index){
+            switch (index) {
                 case "seo-tool":
                     window.open('/html/seo.html')
+                    break
+                case "shipping":
+                    window.open('/html/shipping.html')
             }
         }
     }
