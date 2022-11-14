@@ -1,11 +1,12 @@
-import {seoList} from '/js/seo_list.js'
-import {dict} from "/js/dictionary.js"
+import { seoList } from '/js/seo_list.js'
+import { dict } from "/js/dictionary.js"
 
 window.onload = function () {
     const form = document.getElementById("seo_form");
     const translate = document.getElementById("translate");
 
     form.onsubmit = function (event) {
+        clearTable("seo-table")
         const formData = new FormData(form)
         const lang = formData.get("lang").toUpperCase()
         const keywords = formData.get("keyword").split(" ")
@@ -90,3 +91,10 @@ const translateKeyword = () => {
     document.querySelector("#keyword").value = result
 }
 
+const clearTable = (tableId) => {
+    var objTable = document.getElementById(tableId)
+    var length = objTable.rows.length
+    for (var i = 1; i < length; i++) {
+        objTable.deleteRow(1)
+    }
+}
