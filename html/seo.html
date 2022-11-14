@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="/css/seo.css">
     <script type="module" src="/js/seo_list.js"></script>
     <script type="module" src="/js/seo.js"></script>
+    <script type="module" src="/js/dictionary.js"></script>
 </head>
 <body>
 <main>
@@ -23,11 +24,12 @@
             <option value="no">no</option>
             <option value="pl">pl</option>
             <option value="se">se</option>
+            <option value="pt">pt</option>
         </select>
 
         <label for="keyword">关键词</label>
         <input type="text" id="keyword" name="keyword" required placeholder="以空格分隔">
-
+        <button id="translate">翻译(英语)</button>
         <fieldset>
             <legend>搜索范围：(多选)</legend>
             <input type="checkbox" name="column" value="title" checked/>title

@@ -1,7 +1,9 @@
 import {seoList} from '/js/seo_list.js'
+import {dict} from "/js/dictionary.js"
 
 window.onload = function () {
     const form = document.getElementById("seo_form");
+    const translate = document.getElementById("translate");
 
     form.onsubmit = function (event) {
         const formData = new FormData(form)
@@ -14,6 +16,8 @@ window.onload = function () {
         }
         event.preventDefault()
     }
+
+    translate.onclick = translateKeyword
 
 }
 
@@ -67,4 +71,22 @@ const addTableRow = (item) => {
 
 }
 
+const translateKeyword = () => {
+    const keyword = document.querySelector("#keyword").value.trim().toLowerCase()
+    const selector = document.querySelector("#lang")
+    const lang = selector.options[selector.selectedIndex].value;
+    if (!lang) {
+        alert("请选择要翻译的语言")
+        return false
+    }
+    let result = ""
+    if (keyword in dict) {
+        const data = dict[keyword]
+        const items = data[lang]
+        const index = Math.floor((Math.random() * items.length))
+        result = items[index]
+
+    }
+    document.querySelector("#keyword").value = result
+}
 
