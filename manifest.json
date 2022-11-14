@@ -17,13 +17,13 @@
         "js/content.js"
       ],
       "matches": [
-        "*://*.com/*"
+        "<all_urls>"
       ]
     }
   ],
   "externally_connectable": {
     "matches": [
-      "*://*.com/*"
+      "<all_urls>"
     ]
   },
   "background": {
@@ -36,6 +36,6 @@
     "contextMenus"
   ],
   "host_permissions": [
-    "*://*.com/*"
+    "<all_urls>"
   ]
 }
