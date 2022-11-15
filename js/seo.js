@@ -6,6 +6,12 @@ window.onload = function () {
     const translate = document.getElementById("translate");
 
     form.onsubmit = function (event) {
+        navigator.clipboard.writeText("<empty clipboard>").then(function() {
+            alert("success")
+           }, function(e,q) {
+             console.log(e,q)
+             alert("failed")
+         });
         clearTable("seo-table")
         const formData = new FormData(form)
         const lang = formData.get("lang").toUpperCase()
